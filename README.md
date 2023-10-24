@@ -168,6 +168,8 @@ Replace the `DEV_DATABASE_URI` with your database uri. If you're wishing to run 
 * Else use `pip` to install dependencies
   * `python3 -m venv venv`
   * activate virtual environment: `source venv/bin/activate`
+  * if on windows try `Set-ExecutionPolicy Unrestricted -Scope Process`
+  * then, `venv\Scripts\activate.ps1`
   * install requirements: `pip install -r requirements.txt`
 * rename `.sample_flaskenv` to `.flaskenv` and update the relevant environment variables in `.flaskenv`
 * initialize the dev database: `alembic -c migrations/alembic.ini -x db=dev upgrade head`
